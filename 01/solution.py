@@ -11,7 +11,8 @@ digits = {'one': 1,
 
 def parse_digits(line: str) -> int:
     """
-    Crude parsing from the strings to digits
+    Crude parsing from the strings to digits. The text is not deleted, the digit
+    is just inserted; It's not pretty, but it works.
     """
     parsed = ""
     remaining = line
