@@ -16,9 +16,7 @@ def options(max):
     return [distance(i, max - i) for i in range(1, max + 1)]
 
 def ways_to_win(ms, record):
-    option_list = options(ms)
-    count = sum(1 for o in option_list if o > record)
-    return count
+    return sum(1 for o in options(ms) if o > record)
 
 with open(sys.argv[1], 'r') as f:
     lines = f.readlines()
